@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        form{
+            margin-left: 40%;
+        }
+        h1{
+            margin-left:40%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: black;
+        }
+        h2{
+            margin-left:40%;
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+        }
+    </style>
+</head>
+<body style="background-color:rgb(223, 255, 229);">
+    <h2>Log in form</h2>
+    <form>
+        <fieldset>
+            <legend>Personal Infromation</legend>
+            <input list="name-list">
+            <datalist id="name-list">
+                <option value="Ms"></option>
+                <option value="Mr"></option>
+                <option value="Mss"></option>
+            </datalist><br><br> 
+            <label for="f-name">First name:</label><br>
+            <input type="text" id="fname" placeholder="Htoo Myat" name="fname"><br><br>
+            <label for="l-name">Last name:</label><br>
+            <input type="text" id="lname" value="Ko" name="lname"><br><br>
+            <label for="psw">Password:</label><br>
+            <input tupe="password" id="psw" value="******" name="psw"><br><br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+            <button type="button">Click Me!</button>
+            <button type="button " onclick="alert('Hello World')">Click Me!</button>
+        </fieldset>
+        <br><br>
+        <input type="radio" id="html" name="web_languages" value="HTML" checked>
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="web_language" value="CSS">
+        <lable for="css">CSS</lable><br>
+        <input type="radio" id="js" name="web_languages" value="JS">
+        <label for="js">JS</label><br><br>
+    </form>
+    <h2>Which country would you like to go to?</h2>
+     <form>
+        <input type="checkbox" id="japan" name="fav_country" value="Japan">
+        <label for="japan">Japan</label><br><br>
+        <input type="checkbox" id="thai" name="fav country" value="Thai">
+        <label for="thai">Thai</label><br><br>
+        <input type="checkbox" id="myanmar" name="fav_country" value="Myanmar">
+        <label for="myanmar">Myanmar</label><br><br>
+        <label for="car">Choose a car:</label>
+        <select id="car" name="Car" size="3" multiple>
+             <optgroup label="Swedish car">
+             <option value="rr">Range Rover</option>
+             <option value="b">Car B</option>
+         <option value="c">Car C</option>
+            </optgroup>
+            <optgroup label="German Cars">
+                <option value="rr">Range Rover</option>
+                <option value="d">Car D</option>
+                <option value="e">Car E</option>
+            </optgroup>
+        </select>
+
+        Description
+        <textarea name="message" rows="10" cols="30">
+           Text here
+        </textarea>
+     </form>
+     <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        <input type="range" id="a" name="a" value="50"> +
+        <input type="number" id="b" name="b" value="20"> =
+        <output name="x" for="a b"></output>
+     </form>
+</body>
+</html>
